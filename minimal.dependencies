@@ -6,7 +6,7 @@
     "revision": "cm-12.1"
   },
   { 
- 	  "remote": "th",
+    "remote": "th",
     "repository": "proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
     "revision": "lp-mr1"
