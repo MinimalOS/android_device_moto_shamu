@@ -1,5 +1,6 @@
 /data/cam_socket[23]           u:object_r:camera_socket:s0
 /data/diag_logs(/.*)?          u:object_r:diag_logs:s0
+/data/misc/radio(/.*)?         u:object_r:radio_data_file:s0
 /data/nfc(/.*)?                u:object_r:nfc_data_file:s0
 /data/time(/.*)?               u:object_r:time_data_file:s0
 /data/misc/location/gsiff(/.*)? u:object_r:gsiffd_data_file:s0
@@ -157,26 +158,5 @@
 /system/bin/imsdatadaemon                       u:object_r:ims_exec:s0
 /system/bin/imsqmidaemon                        u:object_r:ims_exec:s0
 
-# TapToWake
-/sys/devices/f9966000.i2c/i2c-1/1-004a/tsp               u:object_r:tap2wake_dev:s0
-
-# for Settings' access to VibratorHW
-/sys/vibrator/pwmvalue                                   u:object_r:sysfs_vibrator:s0
-
-# for Settings' access to DisplayColorCalibration
-/sys/devices/platform/kcal_ctrl.0/kcal                   u:object_r:sysfs_display:s0
-/sys/devices/platform/kcal_ctrl.0/kcal_enable            u:object_r:sysfs_display:s0
-/sys/devices/platform/kcal_ctrl.0/kcal_cont              u:object_r:sysfs_display:s0
-/sys/devices/platform/kcal_ctrl.0/kcal_hue               u:object_r:sysfs_display:s0
-/sys/devices/platform/kcal_ctrl.0/kcal_invert            u:object_r:sysfs_display:s0
-/sys/devices/platform/kcal_ctrl.0/kcal_min               u:object_r:sysfs_display:s0
-/sys/devices/platform/kcal_ctrl.0/kcal_sat               u:object_r:sysfs_display:s0
-/sys/devices/platform/kcal_ctrl.0/kcal_val               u:object_r:sysfs_display:s0
-
-# Sunlight Mode
-/sys/devices/virtual/graphics/fb0/hbm                    u:object_r:sysfs_display:s0
-
-# CNE
-/dev/socket/cnd                                 u:object_r:cnd_socket:s0
-/system/bin/cnd                                 u:object_r:cnd_exec:s0
-
+/dev/socket/cnd  u:object_r:cnd_socket:s0
+/system/bin/cnd  u:object_r:cnd_exec:s0
