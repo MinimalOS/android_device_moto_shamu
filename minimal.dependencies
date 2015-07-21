@@ -3,7 +3,7 @@
     "remote": "mo",
     "repository": "android_kernel_moto_shamu",
     "target_path": "kernel/moto/shamu",
-    "revision": "cm-12.1"
+    "revision": "lp-mr1"
   },
   { 
     "remote": "th",
