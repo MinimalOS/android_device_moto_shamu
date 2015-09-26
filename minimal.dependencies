@@ -6,8 +6,8 @@
     "revision": "lp-mr1"
   },
   { 
-    "remote": "th",
-    "repository": "proprietary_vendor_motorola",
+    "remote": "mo",
+    "repository": "vendor_motorola",
     "target_path": "vendor/motorola",
     "revision": "lp-mr1"
   }
