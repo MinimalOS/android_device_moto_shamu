@@ -25,4 +25,7 @@
 
     <!-- 30 seconds for default screen timeout -->
     <integer name="def_screen_off_timeout">30000</integer>
+
+    <!-- Default app install location -->
+    <integer name="def_install_location">1</integer>
 </resources>
